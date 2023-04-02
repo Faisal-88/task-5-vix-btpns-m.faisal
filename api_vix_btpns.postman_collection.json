@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "94d7d713-e206-4ccc-8b05-7a3ce063518d",
+		"name": "api_vix_btpns",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26486844"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Username\":\"faisal\",\r\n    \"Email\": \"faisal@gmail.com\",\r\n    \"Password\": \"qwerty\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\":\"faisal\",\r\n    \"Password\": \"qwerty\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Username\":\"faisal\",\r\n    \"Email\": \"faisal@gmail.com\",\r\n    \"Password\": \"qwerty\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080:/photos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/photos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"photos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/photos/upload",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080:/photos/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/photos/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"photos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080:/photos/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/photos/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"photos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
